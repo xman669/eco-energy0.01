@@ -18,6 +18,612 @@
     
     
     <style type="text/css" id="form-designer-style"> /* Injected CSS Code */
+.form-all:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-all {
+  font-family: "Lucida Grande", sans-serif;
+}
+.form-all {
+  width: 400px;
+}
+.form-label-left,
+.form-label-right {
+  width: 150px;
+}
+.form-label {
+  white-space: normal;
+}
+.form-label.form-label-auto {
+  display: block;
+  float: none;
+  word-break: break-word;
+  text-align: left;
+}
+.form-label-left {
+  display: inline-block;
+  white-space: normal;
+  float: left;
+  text-align: left;
+}
+.form-label-right {
+  display: inline-block;
+  white-space: normal;
+  float: left;
+  text-align: right;
+}
+.form-label-top {
+  white-space: normal;
+  display: block;
+  float: none;
+  text-align: left;
+}
+.form-radio-item label:before {
+  top: 0;
+}
+.form-all {
+  font-size: 14px;
+}
+.form-label {
+  font-weight: bold;
+}
+.form-checkbox-item label,
+.form-radio-item label {
+  font-weight: normal;
+}
+.supernova {
+  background-color: none;
+  background-color: #ffffff;
+}
+.supernova body {
+  background-color: transparent;
+}
+/*
+@width30: (unit(@formWidth, px) + 60px);
+@width60: (unit(@formWidth, px)+ 120px);
+@width90: (unit(@formWidth, px)+ 180px);
+*/
+/* | */
+/* | */
+/* | */
+@media screen and (max-width: 480px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+/* | */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+/* | */
+@media screen and (min-width: 480px) and (max-width: 399px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+/* | */
+@media screen and (min-width: 768px) {
+  .jotform-form {
+    padding: 60px 0;
+  }
+}
+/* | */
+/* | */
+@media screen and (max-width: 399px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+.supernova .form-all,
+.form-all {
+  background-color: none;
+  border: 1px solid transparent;
+}
+.form-all {
+  color: #000000;
+}
+.form-header-group .form-header {
+  color: #000000;
+}
+.form-header-group .form-subHeader {
+  color: #1a1a1a;
+}
+.form-sub-label {
+  color: #1a1a1a;
+}
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html {
+  color: #000000;
+}
+.form-checkbox-item label,
+.form-radio-item label {
+  color: #1a1a1a;
+}
+.form-line.form-line-active {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #ffffe0;
+}
+/* omer */
+.form-radio-item,
+.form-checkbox-item {
+  padding-bottom: 0px !important;
+}
+.form-radio-item:last-child,
+.form-checkbox-item:last-child {
+  padding-bottom: 0;
+}
+/* omer */
+.form-single-column .form-checkbox-item,
+.form-single-column .form-radio-item {
+  width: 100%;
+}
+.form-checkbox-item .editor-container div,
+.form-radio-item .editor-container div {
+  position: relative;
+}
+.form-checkbox-item .editor-container div:before,
+.form-radio-item .editor-container div:before {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+.form-checkbox-item,
+.form-radio-item {
+  padding-left: 2px;
+}
+.form-checkbox-item input,
+.form-radio-item input {
+  margin-top: 2px;
+}
+.supernova {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-repeat: repeat;
+}
+.supernova {
+  background-image: none;
+}
+#stage {
+  background-image: none;
+}
+/* | */
+.form-all {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-repeat: repeat;
+}
+.form-header-group {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+}
+.form-line {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.form-line {
+  padding: 12px 36px;
+}
+.form-all .qq-upload-button,
+.form-all .form-submit-button,
+.form-all .form-submit-reset,
+.form-all .form-submit-print {
+  font-size: 1em;
+  padding: 9px 15px;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+.form-all .form-pagebreak-back,
+.form-all .form-pagebreak-next {
+  font-size: 1em;
+  padding: 9px 15px;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+/*
+& when ( @buttonFontType = google ) {
+  @import (css) "@{buttonFontLink}";
+}
+*/
+h2.form-header {
+  line-height: 1.618em;
+  font-size: 1.714em;
+}
+h2 ~ .form-subHeader {
+  line-height: 1.5em;
+  font-size: 1.071em;
+}
+.form-header-group {
+  text-align: left;
+}
+/*.form-dropdown,
+.form-radio-item,
+.form-checkbox-item,
+.form-radio-other-input,
+.form-checkbox-other-input,*/
+.form-captcha input,
+.form-spinner input,
+.form-error-message {
+  padding: 4px 3px 2px 3px;
+}
+.form-header-group {
+  font-family: "Lucida Grande", sans-serif;
+}
+.form-section {
+  padding: 0px 0px 0px 0px;
+}
+.form-header-group {
+  margin: 12px 36px 12px 36px;
+}
+.form-header-group {
+  padding: 24px 0px 24px 0px;
+}
+.form-textbox,
+.form-textarea {
+  padding: 4px 3px 2px 3px;
+}
+.form-textbox,
+.form-textarea,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input {
+  background-color: inherit;
+}
+.form-matrix-row-headers,
+.form-matrix-column-headers,
+.form-matrix-values {
+  padding: 4px;
+}
+[data-type="control_dropdown"] .form-input,
+[data-type="control_dropdown"] .form-input-wide {
+  width: 150px;
+}
+.form-label {
+  font-family: "Lucida Grande", sans-serif;
+}
+li[data-type="control_image"] div {
+  text-align: left;
+}
+li[data-type="control_image"] img {
+  border: none;
+  border-width: 0px !important;
+  border-style: solid !important;
+  border-color: false !important;
+}
+.form-line-column {
+  width: auto;
+}
+.form-line-error {
+  overflow: hidden;
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -ms-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #fff4f4;
+}
+.form-line-error .form-error-message {
+  background-color: #ff3200;
+  clear: both;
+  float: none;
+}
+.form-line-error .form-error-message .form-error-arrow {
+  border-bottom-color: #ff3200;
+}
+.form-line-error input:not(#coupon-input),
+.form-line-error textarea,
+.form-line-error .form-validation-error {
+  border: 1px solid #ff3200;
+  box-shadow: 0 0 3px #ff3200;
+}
+.ie-8 .form-all {
+  margin-top: auto;
+  margin-top: initial;
+}
+.ie-8 .form-all:before {
+  display: none;
+}
+[data-type="control_clear"] {
+  display: none;
+}
+/* | */
+@media screen and (max-width: 480px), screen and (max-device-width: 767px) and (orientation: portrait), screen and (max-device-width: 415px) and (orientation: landscape) {
+  .testOne {
+    letter-spacing: 0;
+  }
+  .form-all {
+    border: 0;
+    max-width: initial;
+  }
+  .form-sub-label-container {
+    width: 100%;
+    margin: 0;
+    margin-right: 0;
+    float: left;
+    box-sizing: border-box;
+  }
+  span.form-sub-label-container + span.form-sub-label-container {
+    margin-right: 0;
+  }
+  .form-sub-label {
+    white-space: normal;
+  }
+  .form-address-table td,
+  .form-address-table th {
+    padding: 0 1px 10px;
+  }
+  .form-submit-button,
+  .form-submit-print,
+  .form-submit-reset {
+    width: 100%;
+    margin-left: 0!important;
+  }
+  div[id*=at_] {
+    font-size: 14px;
+    font-weight: 700;
+    height: 8px;
+    margin-top: 6px;
+  }
+  .showAutoCalendar {
+    width: 20px;
+  }
+  img.form-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .form-matrix-row-headers {
+    width: 100%;
+    word-break: break-all;
+    min-width: 80px;
+  }
+  .form-collapse-table,
+  .form-header-group {
+    margin: 0;
+  }
+  .form-collapse-table {
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+  }
+  .form-collapse-hidden {
+    display: none !important;
+  }
+  .form-input {
+    width: 100%;
+  }
+  .form-label {
+    width: 100% !important;
+  }
+  .form-label-left,
+  .form-label-right {
+    display: block;
+    float: none;
+    text-align: left;
+    width: auto!important;
+  }
+  .form-line,
+  .form-line.form-line-column {
+    padding: 2% 5%;
+    box-sizing: border-box;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: initial !important;
+  }
+  .form-radio-other-input,
+  .form-checkbox-other-input {
+    max-width: 55% !important;
+  }
+  .form-dropdown,
+  .form-textarea,
+  .form-textbox {
+    width: 100%!important;
+    box-sizing: border-box;
+  }
+  .form-input,
+  .form-input-wide,
+  .form-textarea,
+  .form-textbox,
+  .form-dropdown {
+    max-width: initial!important;
+  }
+  .form-checkbox-item:not(#foo),
+  .form-radio-item:not(#foo) {
+    width: 100%;
+  }
+  .form-address-city,
+  .form-address-line,
+  .form-address-postal,
+  .form-address-state,
+  .form-address-table,
+  .form-address-table .form-sub-label-container,
+  .form-address-table select,
+  .form-input {
+    width: 100%;
+  }
+  div.form-header-group {
+    padding: 24px 0px !important;
+    margin: 0 12px 2% !important;
+    margin-left: 5%!important;
+    margin-right: 5%!important;
+    box-sizing: border-box;
+  }
+  div.form-header-group.hasImage img {
+    max-width: 100%;
+  }
+  [data-type="control_button"] {
+    margin-bottom: 0 !important;
+  }
+  [data-type=control_fullname] .form-sub-label-container {
+    width: 48%;
+  }
+  [data-type=control_fullname] .form-sub-label-container:first-child {
+    margin-right: 4%;
+  }
+  [data-type=control_phone] .form-sub-label-container {
+    width: 65%;
+    margin-right: 0;
+    margin-left: 0;
+    float: left;
+  }
+  [data-type=control_phone] .form-sub-label-container:first-child {
+    width: 31%;
+    margin-right: 4%;
+  }
+  [data-type=control_datetime] .allowTime-container {
+    width: 100%;
+  }
+  [data-type=control_datetime] .allowTime-container .form-sub-label-container {
+    width: 24%!important;
+    margin-left: 6%;
+    margin-right: 0;
+  }
+  [data-type=control_datetime] .allowTime-container .form-sub-label-container:first-child {
+    margin-left: 0;
+  }
+  [data-type=control_datetime] span + span + span > span:first-child {
+    display: block;
+    width: 100% !important;
+  }
+  [data-type=control_birthdate] .form-sub-label-container,
+  [data-type=control_time] .form-sub-label-container {
+    width: 27.3%!important;
+    margin-right: 6% !important;
+  }
+  [data-type=control_time] .form-sub-label-container:last-child {
+    width: 33.3%!important;
+    margin-right: 0 !important;
+  }
+  .form-pagebreak-back-container,
+  .form-pagebreak-next-container {
+    min-height: 1px;
+    width: 50% !important;
+  }
+  .form-pagebreak-back,
+  .form-pagebreak-next,
+  .form-product-item.hover-product-item {
+    width: 100%;
+  }
+  .form-pagebreak-back-container {
+    padding: 0;
+    text-align: right;
+  }
+  .form-pagebreak-next-container {
+    padding: 0;
+    text-align: left;
+  }
+  .form-pagebreak {
+    margin: 0 auto;
+  }
+  .form-buttons-wrapper {
+    margin: 0!important;
+    margin-left: 0!important;
+  }
+  .form-buttons-wrapper button {
+    width: 100%;
+  }
+  .form-buttons-wrapper .form-submit-print {
+    margin: 0 !important;
+  }
+  table {
+    width: 100%!important;
+    max-width: initial!important;
+  }
+  table td + td {
+    padding-left: 3%;
+  }
+  .form-checkbox-item,
+  .form-radio-item {
+    white-space: normal!important;
+  }
+  .form-checkbox-item input,
+  .form-radio-item input {
+    width: auto;
+  }
+  .form-collapse-table {
+    margin: 0 5%;
+    display: block;
+    zoom: 1;
+    width: auto;
+  }
+  .form-collapse-table:before,
+  .form-collapse-table:after {
+    display: table;
+    content: '';
+    line-height: 0;
+  }
+  .form-collapse-table:after {
+    clear: both;
+  }
+  .fb-like-box {
+    width: 98% !important;
+  }
+  .form-error-message {
+    clear: both;
+    bottom: -10px;
+  }
+  .date-separate,
+  .phone-separate {
+    display: none;
+  }
+  .custom-field-frame,
+  .direct-embed-widgets,
+  .signature-pad-wrapper {
+    width: 100% !important;
+  }
+}
+/* | */
 /*PREFERENCES STYLE*/
     .form-all {
       font-family: Lucida Grande, sans-serif;
@@ -80,8 +686,15 @@
       font-size: 14px
     }
   
+    .supernova {
+      background-color: #ffffff;
+    }
+    .supernova body {
+      background: transparent;
+    }
+  
     .supernova .form-all, .form-all {
-      background-color: #fff;
+      background-color: #ffffff;
     }
   
     .form-all {
@@ -105,13 +718,6 @@
       color: #1a1a1a;
     }
   
-    .supernova {
-      background-color: rgba(255,255,255,0);
-    }
-    .supernova body {
-      background: transparent;
-    }
-  
     .form-textbox,
     .form-textarea,
     .form-dropdown,
@@ -119,9 +725,29 @@
     .form-checkbox-other-input,
     .form-captcha input,
     .form-spinner input {
-      background-color: #fff;
+      background-color: #ffffff;
     }
   
+    .form-line-error {
+      overflow: hidden;
+      transition: none;
+      background-color: #FF3200;
+    }
+    .form-line-error .form-error-message {
+      background-color: #FF3200;
+      clear: both;
+      float: none;
+    }
+    .form-line-error .form-error-arrow {
+      border-bottom-color: #FF3200;
+    }
+    .form-line-error input:not(#coupon-input),
+    .form-line-error textarea,
+    .form-line-error .form-validation-error {
+      border: 1px solid #FF3200;
+      .box-shadow(0 0 3px #FF3200);
+    }
+   
     .supernova {
       background-image: none;
     }
@@ -139,16 +765,31 @@
     margin-top: initial;
   }
   
-  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/.form-matrix-values {padding-left: 4px;padding-right: 4px;}/* 1st Column */.form-matrix-row-headers +.form-matrix-values .form-textbox {width: 200px; padding-left: 4px;padding-right: 4px;}/* 2nd Column */.form-matrix-row-headers +.form-matrix-values +.form-matrix-values .form-textbox {width: 250px; padding-left:}/* 3rd Column */
-.form-matrix-row-headers +.form-matrix-values +.form-matrix-values +.form-matrix-values .form-textbox{width: 120px;}
+  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+.form-matrix-values {
+    padding-left : 4px;
+    padding-right : 4px;
+}
+/* 1st Column */
+.form-matrix-row-headers +.form-matrix-values .form-textbox {
+    width : 200px;
+    padding-left : 4px;
+    padding-right : 4px;
+}
+/* 2nd Column */
+.form-matrix-row-headers +.form-matrix-values +.form-matrix-values .form-textbox {
+    width : 250px;
+}
+/* 3rd Column */
+.form-matrix-row-headers +.form-matrix-values +.form-matrix-values +.form-matrix-values .form-textbox {
+    width : 120px;
+}
 .form-label.form-label-auto {
-        
-      display: block;
-      float: none;
-      text-align: left;
-      width: 100%;
-    
-      }
+    display : block;
+    float : none;
+    text-align : left;
+    width : 100%;
+}
     /* Injected CSS Code */ </style>
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
@@ -216,24 +857,12 @@
         </nav>
       </div></header>
     <section class="u-clearfix u-section-1" id="sec-3e8b">
-      <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+      <div class="u-align-left u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
-                  <div class="u-video u-video-contain u-video-1">
-                    <div class="embed-responsive embed-responsive-1">
-                      <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/gnEwCwZia5E?mute=0&amp;showinfo=0&amp;controls=0&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
-                    </div>
-                  </div>
-                  <h6 class="u-text u-text-1">Sample Headline&nbsp; jb';bjbblbbbjbkjbk kbkbkjbkjbjkjbkb;jkbkjbjkbkjbbb<br>
-                    <br>bkbkjbbjkbjbjbjbjbkjbjbjkbjkbjkbkbjkbjbkjbjbjbjkbkbkjbjkb jjbjbjbjbb jnjnlnlnklnlknknknklnlk nlnknnknknklnknklnlnlnlnlnnlknknlknknknklklnkln
-                  </h6>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-2">
                   <div class="u-clearfix u-custom-html u-custom-html-1">
                     <script src="https://cdn01.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
                     <script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.31393" type="text/javascript"></script>
@@ -1289,7 +1918,7 @@
       }
     };
     return _update;
-  })({"text":{"text":"Question","value":"Agenda"},"labelAlign":{"text":"Label Align","value":"Top","dropdown":[["Auto","Auto"],["Left","Left"],["Right","Right"],["Top","Top"]]},"required":{"text":"Required","value":"No","dropdown":[["No","No"],["Yes","Yes"]]},"description":{"text":"Hover Text","value":"","textarea":true},"slotDuration":{"text":"Slot Duration","value":"60","dropdown":[[15,"15 min"],[30,"30 min"],[45,"45 min"],[60,"60 min"],["custom","Custom min"]],"hint":"Select how long each slot will be."},"startDate":{"text":"Start Date","value":""},"endDate":{"text":"End Date","value":""},"intervals":{"text":"Intervals","value":[{"from":"09:00","to":"17:00","days":["Mon","Tue","Wed","Thu","Fri"]}],"hint":"The hours will be applied to the selected days and repeated."},"useBlockout":{"text":"Blockout Custom Dates","value":"No","dropdown":[["No","No"],["Yes","Yes"]],"hint":"Disable certain date(s) in the calendar."},"blockoutDates":{"text":"Blockout dates","value":[{"startDate":"","endDate":""}]},"useLunchBreak":{"text":"Lunch Time","value":"Yes","dropdown":[["No","No"],["Yes","Yes"]],"hint":"Enable lunchtime in the calendar."},"lunchBreak":{"text":"Lunchtime hours","value":[{"from":"12:00","to":"14:00"}]},"timezone":{"text":"Timezone","value":"America/Chicago (GMT-06:00)"},"timeFormat":{"text":"Time Format","value":"AM/PM","dropdown":[["24 Hour","24 Hour"],["AM/PM","AM/PM"]],"icon":"images/blank.gif","iconClassName":"toolbar-time_format_24"},"months":{"value":["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],"hidden":true},"days":{"value":["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],"hidden":true},"startWeekOn":{"text":"Start Week On","value":"Sunday","dropdown":[["Monday","Monday"],["Sunday","Sunday"]],"toolbar":false},"rollingDays":{"text":"Rolling Days","value":"","toolbar":false},"prevMonthButtonText":{"text":"Previous month","value":""},"nextMonthButtonText":{"text":"Next month","value":""},"prevYearButtonText":{"text":"Previous year","value":""},"nextYearButtonText":{"text":"Next year","value":""},"prevDayButtonText":{"text":"Previous day","value":""},"nextDayButtonText":{"text":"Next day","value":""},"appointmentType":{"hidden":true,"value":"single"},"autoDetectTimezone":{"hidden":true,"value":"Yes"},"dateFormat":{"hidden":true,"value":"mm/dd/yyyy"},"maxAttendee":{"hidden":true,"value":"5"},"maxEvents":{"hidden":true,"value":""},"minScheduleNotice":{"hidden":true,"value":"3"},"name":{"hidden":true,"value":"agenda"},"order":{"hidden":true,"value":"10"},"qid":{"toolbar":false,"value":"input_64"},"reminderEmails":{"hidden":true,"value":{"schedule":[{"value":"2","unit":"hour"}]}},"type":{"hidden":true,"value":"control_appointment"},"useReminderEmails":{"hidden":true,"value":"No"},"id":{"toolbar":false,"value":"64"},"qname":{"toolbar":false,"value":"q64_agenda"},"cdnconfig":{"CDN":"https://cdn.jotfor.ms/"},"passive":false,"formProperties":{"products":false,"highlightLine":"Enabled","coupons":false,"useStripeCoupons":false,"taxes":false,"comparePaymentForm":"","paymentListSettings":false,"newPaymentUIForNewCreatedForms":false,"formBackground":"#fff"},"formID":220570886747164,"themeVersion":"v1"});
+  })({"text":{"text":"Question","value":"Agenda"},"labelAlign":{"text":"Label Align","value":"Top","dropdown":[["Auto","Auto"],["Left","Left"],["Right","Right"],["Top","Top"]]},"required":{"text":"Required","value":"No","dropdown":[["No","No"],["Yes","Yes"]]},"description":{"text":"Hover Text","value":"","textarea":true},"slotDuration":{"text":"Slot Duration","value":"60","dropdown":[[15,"15 min"],[30,"30 min"],[45,"45 min"],[60,"60 min"],["custom","Custom min"]],"hint":"Select how long each slot will be."},"startDate":{"text":"Start Date","value":""},"endDate":{"text":"End Date","value":""},"intervals":{"text":"Intervals","value":[{"from":"09:00","to":"17:00","days":["Mon","Tue","Wed","Thu","Fri"]}],"hint":"The hours will be applied to the selected days and repeated."},"useBlockout":{"text":"Blockout Custom Dates","value":"No","dropdown":[["No","No"],["Yes","Yes"]],"hint":"Disable certain date(s) in the calendar."},"blockoutDates":{"text":"Blockout dates","value":[{"startDate":"","endDate":""}]},"useLunchBreak":{"text":"Lunch Time","value":"Yes","dropdown":[["No","No"],["Yes","Yes"]],"hint":"Enable lunchtime in the calendar."},"lunchBreak":{"text":"Lunchtime hours","value":[{"from":"12:00","to":"14:00"}]},"timezone":{"text":"Timezone","value":"America/Chicago (GMT-06:00)"},"timeFormat":{"text":"Time Format","value":"AM/PM","dropdown":[["24 Hour","24 Hour"],["AM/PM","AM/PM"]],"icon":"images/blank.gif","iconClassName":"toolbar-time_format_24"},"months":{"value":["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],"hidden":true},"days":{"value":["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],"hidden":true},"startWeekOn":{"text":"Start Week On","value":"Sunday","dropdown":[["Monday","Monday"],["Sunday","Sunday"]],"toolbar":false},"rollingDays":{"text":"Rolling Days","value":"","toolbar":false},"prevMonthButtonText":{"text":"Previous month","value":""},"nextMonthButtonText":{"text":"Next month","value":""},"prevYearButtonText":{"text":"Previous year","value":""},"nextYearButtonText":{"text":"Next year","value":""},"prevDayButtonText":{"text":"Previous day","value":""},"nextDayButtonText":{"text":"Next day","value":""},"appointmentType":{"hidden":true,"value":"single"},"autoDetectTimezone":{"hidden":true,"value":"Yes"},"dateFormat":{"hidden":true,"value":"mm/dd/yyyy"},"maxAttendee":{"hidden":true,"value":"5"},"maxEvents":{"hidden":true,"value":""},"minScheduleNotice":{"hidden":true,"value":"3"},"name":{"hidden":true,"value":"agenda"},"order":{"hidden":true,"value":"13"},"qid":{"toolbar":false,"value":"input_64"},"reminderEmails":{"hidden":true,"value":{"schedule":[{"value":"2","unit":"hour"}]}},"type":{"hidden":true,"value":"control_appointment"},"useReminderEmails":{"hidden":true,"value":"No"},"id":{"toolbar":false,"value":"64"},"qname":{"toolbar":false,"value":"q64_agenda"},"cdnconfig":{"CDN":"https://cdn.jotfor.ms/"},"passive":false,"formProperties":{"products":false,"highlightLine":"Enabled","coupons":false,"useStripeCoupons":false,"taxes":false,"comparePaymentForm":"","paymentListSettings":false,"newPaymentUIForNewCreatedForms":false,"formBackground":"#ffffff"},"formID":220570886747164,"themeVersion":"v1"});
         JotForm.alterTexts({"ageVerificationError":"You must be older than {minAge} years old to submit this form.","alphabetic":"This field can only contain letters","alphanumeric":"This field can only contain letters and numbers.","appointmentSelected":"You’ve selected {time} on {date}","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccInvalidNumber":"Credit Card Number is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingDonation":"Please enter numeric values for donation amount.","ccMissingProduct":"Please select at least one product.","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","confirmClearForm":"Are you sure you want to clear the form","confirmEmail":"E-mail does not match","currency":"This field can only contain currency values.","cyrillic":"This field can only contain cyrillic characters","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","dateLimited":"This date is unavailable.","disallowDecimals":"Please enter a whole number.","doneButton":"Done","doneMessage":"Well done! All errors are fixed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","email":"Enter a valid e-mail address","fillMask":"Field value must fill mask.","freeEmailError":"Free email accounts are not allowed","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoNotAvailableTitle":"Position Unavailable","geoPermissionDesc":"Check your browser's privacy settings.","geoPermissionTitle":"Permission Denied","geoTimeoutDesc":"Please check your internet connection and try again.","geoTimeoutTitle":"Timeout","gradingScoreError":"Score total should only be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","justSoldOut":"Just Sold Out","lessThan":"Your score should be less than or equal to","maxDigitsError":"The maximum digits allowed is","maxFileSize_infoMessage":"Max. file size","maxSelectionsError":"The maximum number of selections allowed is ","minCharactersError":"The number of characters should not be less than the minimum value:","minSelectionsError":"The minimum required number of selections is ","multipleError":"There are {count} errors in this page. Please correct them before moving on.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","noSlotsAvailable":"No slots available","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","numeric":"This field can only contain numeric values","oneError":"There is {count} error in this page. Please correct it before moving on.","pastDatesDisallowed":"Date must not be in the past.","pleaseWait":"Please wait...","required":"This field is required.","requiredLegend":"All fields marked with * are required and must be filled.","requireEveryCell":"Every cell is required.","requireEveryRow":"Every row is required.","requireOne":"At least one field required.","restrictedDomain":"This domain is not allowed","seeErrorsButton":"See Errors","selectionSoldOut":"Selection Sold Out","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","soldOut":"Sold Out","subProductItemsLeft":"({count} items left)","uploadExtensions":"You can only upload following files:","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","url":"This field can only contain a valid URL","validateEmail":"You need to validate this e-mail","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is"});
       FormTranslation.init({"detectUserLanguage":"1","firstPageOnly":"0","options":"English (US)","originalLanguage":"en","primaryLanguage":"en","saveUserLanguage":"1","showStatus":"flag-with-nation","theme":"light-theme","version":"2"});
       setTimeout(function() {
@@ -1298,9 +1927,9 @@
           JotForm.isNewSaveAndContinueLaterActive = true;
   /*INIT-END*/
   });
-   JotForm.prepareCalculationsOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"locations","qid":"51","text":"Locations","type":"control_address"},null,{"description":"","name":"howLong","qid":"53","text":"How long living at currently  Address","type":"control_radio"},null,{"description":"","name":"haNotado","qid":"55","text":"Ha notado algun Aumento de Light Bill en estos Ultimos Anos","type":"control_radio"},{"description":"","name":"introduzcaEl","qid":"56","subLabel":"","text":"Introduzca el valor  de Light bill cuando llego a su residencia ","type":"control_number"},{"description":"","name":"introduzcaEl57","qid":"57","subLabel":"","text":"Introduzca el valor actual de su Light bill de su Ultimo moes ","type":"control_number"},{"description":"","name":"uploadA","qid":"58","subLabel":"","text":"Upload a Light Bill Photo to Setup you Appoint and get a Free quote ","type":"control_fileupload"},{"description":"","name":"leGustaria","qid":"59","text":"Le gustaria disminuir su light bill de por vida","type":"control_radio"},null,{"description":"","name":"name61","qid":"61","text":"Name","type":"control_fullname"},{"description":"","name":"phoneNumber","qid":"62","text":"Phone Number","type":"control_phone"},{"description":"","name":"favorVerificar","qid":"63","text":"Favor verificar que usted es humano","type":"control_captcha"},{"description":"","name":"agenda","qid":"64","text":"Agenda","type":"control_appointment"},{"name":"enviar","qid":"65","text":"Enviar","type":"control_button"}]);
+   JotForm.prepareCalculationsOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"locations","qid":"51","text":"Locations","type":"control_address"},null,{"description":"","name":"howLong","qid":"53","text":"How long living at currently  Address","type":"control_radio"},null,{"description":"","name":"haNotado","qid":"55","text":"Ha notado algun Aumento de Light Bill en estos Ultimos Anos","type":"control_radio"},{"description":"","name":"introduzcaEl","qid":"56","subLabel":"","text":"Introduzca el valor  de Light bill cuando llego a su residencia ","type":"control_number"},{"description":"","name":"introduzcaEl57","qid":"57","subLabel":"","text":"Introduzca el valor actual de su Light bill de su Ultimo moes ","type":"control_number"},{"description":"","name":"uploadA","qid":"58","subLabel":"","text":"Upload a Light Bill Photo to Setup you Appoint and get a Free quote ","type":"control_fileupload"},{"description":"","name":"leGustaria","qid":"59","text":"Le gustaria disminuir su light bill de por vida","type":"control_radio"},null,{"description":"","name":"name61","qid":"61","text":"Name","type":"control_fullname"},{"description":"","name":"phoneNumber","qid":"62","text":"Phone Number","type":"control_phone"},{"description":"","name":"favorVerificar","qid":"63","text":"Favor verificar que usted es humano","type":"control_captcha"},{"description":"","name":"agenda","qid":"64","text":"Agenda","type":"control_appointment"},{"name":"enviar","qid":"65","text":"Enviar","type":"control_button"},{"name":"appoiment","qid":"66","text":"Appoiment","type":"control_head"},null,{"name":"divisor","qid":"68","type":"control_divider"},{"name":"separadorPagina","qid":"69","text":"Separador pagina","type":"control_pagebreak"}]);
    setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"locations","qid":"51","text":"Locations","type":"control_address"},null,{"description":"","name":"howLong","qid":"53","text":"How long living at currently  Address","type":"control_radio"},null,{"description":"","name":"haNotado","qid":"55","text":"Ha notado algun Aumento de Light Bill en estos Ultimos Anos","type":"control_radio"},{"description":"","name":"introduzcaEl","qid":"56","subLabel":"","text":"Introduzca el valor  de Light bill cuando llego a su residencia ","type":"control_number"},{"description":"","name":"introduzcaEl57","qid":"57","subLabel":"","text":"Introduzca el valor actual de su Light bill de su Ultimo moes ","type":"control_number"},{"description":"","name":"uploadA","qid":"58","subLabel":"","text":"Upload a Light Bill Photo to Setup you Appoint and get a Free quote ","type":"control_fileupload"},{"description":"","name":"leGustaria","qid":"59","text":"Le gustaria disminuir su light bill de por vida","type":"control_radio"},null,{"description":"","name":"name61","qid":"61","text":"Name","type":"control_fullname"},{"description":"","name":"phoneNumber","qid":"62","text":"Phone Number","type":"control_phone"},{"description":"","name":"favorVerificar","qid":"63","text":"Favor verificar que usted es humano","type":"control_captcha"},{"description":"","name":"agenda","qid":"64","text":"Agenda","type":"control_appointment"},{"name":"enviar","qid":"65","text":"Enviar","type":"control_button"}]);}, 20); </script>
+JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"locations","qid":"51","text":"Locations","type":"control_address"},null,{"description":"","name":"howLong","qid":"53","text":"How long living at currently  Address","type":"control_radio"},null,{"description":"","name":"haNotado","qid":"55","text":"Ha notado algun Aumento de Light Bill en estos Ultimos Anos","type":"control_radio"},{"description":"","name":"introduzcaEl","qid":"56","subLabel":"","text":"Introduzca el valor  de Light bill cuando llego a su residencia ","type":"control_number"},{"description":"","name":"introduzcaEl57","qid":"57","subLabel":"","text":"Introduzca el valor actual de su Light bill de su Ultimo moes ","type":"control_number"},{"description":"","name":"uploadA","qid":"58","subLabel":"","text":"Upload a Light Bill Photo to Setup you Appoint and get a Free quote ","type":"control_fileupload"},{"description":"","name":"leGustaria","qid":"59","text":"Le gustaria disminuir su light bill de por vida","type":"control_radio"},null,{"description":"","name":"name61","qid":"61","text":"Name","type":"control_fullname"},{"description":"","name":"phoneNumber","qid":"62","text":"Phone Number","type":"control_phone"},{"description":"","name":"favorVerificar","qid":"63","text":"Favor verificar que usted es humano","type":"control_captcha"},{"description":"","name":"agenda","qid":"64","text":"Agenda","type":"control_appointment"},{"name":"enviar","qid":"65","text":"Enviar","type":"control_button"},{"name":"appoiment","qid":"66","text":"Appoiment","type":"control_head"},null,{"name":"divisor","qid":"68","type":"control_divider"},{"name":"separadorPagina","qid":"69","text":"Separador pagina","type":"control_pagebreak"}]);}, 20); </script>
                     <link href="https://cdn01.jotfor.ms/static/formCss.css?3.3.31393" rel="stylesheet" type="text/css">
                     <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
                     <link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/nova.css?3.3.31393">
@@ -1344,6 +1973,13 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
                         </div>
                         <script type="text/javascript" src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.31393"></script>
                         <ul class="form-section page-section">
+                          <li id="cid_66" class="form-input-wide" data-type="control_head">
+                            <div class="form-header-group header-large">
+                              <div class="header-text httac htvam">
+                                <h1 id="header_66" class="form-header" data-component="header"> Appoiment </h1>
+                              </div>
+                            </div>
+                          </li>
                           <li class="form-line" data-type="control_fullname" id="id_61">
                             <label class="form-label form-label-auto form-label-top" id="label_61" for="first_61"> Name </label>
                             <div id="cid_61" class="form-input-wide">
@@ -1418,6 +2054,27 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
                                   </span>
                                 </div>
                               </div>
+                            </div>
+                          </li>
+                          <li id="cid_69" class="form-input-wide" data-type="control_pagebreak">
+                            <div class="form-pagebreak" data-component="pagebreak">
+                              <div class="form-pagebreak-back-container">
+                                <button id="form-pagebreak-back_69" type="button" class="form-pagebreak-back jf-form-buttons" data-component="pagebreak-back"> Atrás </button>
+                              </div>
+                              <div class="form-pagebreak-next-container">
+                                <button id="form-pagebreak-next_69" type="button" class="form-pagebreak-next jf-form-buttons" data-component="pagebreak-next"> Seguir </button>
+                              </div>
+                              <div class="form-pagebreak-next-container form-pagebreak-save-container">
+                                <button id="input_scl_69" type="button" class="form-sacl-button form-submit-button jf-form-buttons js-new-sacl-button sacl-button" data-component="button"> Save </button>
+                              </div>
+                              <div style="clear:both" class="form-sub-label pageInfo" id="pageInfo_69"></div>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="form-section page-section" style="display:none;">
+                          <li class="form-line" data-type="control_divider" id="id_68">
+                            <div id="cid_68" class="form-input-wide">
+                              <div class="divider" aria-label="Divider" data-component="divider" style="border-bottom-width:1px;border-bottom-style:solid;border-color:#ffffff;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px"></div>
                             </div>
                           </li>
                           <li class="form-line" data-type="control_radio" id="id_53">
@@ -1568,6 +2225,14 @@ for (var i = 0; i < all_spc.length; i++)
 } </script>
                     </form>
                   </div>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <img class="u-image u-image-default u-image-1" src="images/solar_16x9_1.jpg" alt="" data-image-width="1280" data-image-height="720">
+                  <h1 class="u-text u-text-default u-text-1">Sample Headline</h1>
+                  <h5 class="u-text u-text-default u-text-2">Sample Headline</h5>
+                  <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2"></div>
                 </div>
               </div>
             </div>
